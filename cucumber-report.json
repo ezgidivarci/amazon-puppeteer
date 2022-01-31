@@ -1,0 +1,111 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "search-product-in-amazon;verify-result-for-amazon-product-search",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Verify result for amazon product search",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1209000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "User visits amazon website",
+            "match": {
+              "location": "features/support/search.test.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4883000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "User search by product name",
+            "match": {
+              "location": "features/support/search.test.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4605000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Count the results",
+            "match": {
+              "location": "features/support/search.test.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 162000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "User clears first search from input",
+            "match": {
+              "location": "features/support/search.test.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5795000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Add a product to the basket",
+            "match": {
+              "location": "features/support/search.test.js:57"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1363000000,
+              "error_message": "Error: Execution context was destroyed, most likely because of a navigation.\n    at rewriteError (/Users/ezgi.divarci/Desktop/23/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:265:23)\n    at async ExecutionContext._evaluateInternal (/Users/ezgi.divarci/Desktop/23/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:165:64)\n    at async /Users/ezgi.divarci/Desktop/23/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:106:30\n    at async DOMWorld.$ (/Users/ezgi.divarci/Desktop/23/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:98:26)\n    at async DOMWorld.click (/Users/ezgi.divarci/Desktop/23/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:284:24)\n    at async World.<anonymous> (/Users/ezgi.divarci/Desktop/23/features/support/search.test.js:68:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "Go to basket screen and check product exists",
+            "match": {
+              "location": "features/support/search.test.js:71"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "search-product-in-amazon",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Search product in amazon",
+    "tags": [],
+    "uri": "features/search.feature"
+  }
+]
