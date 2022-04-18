@@ -5,6 +5,6 @@
 		Given User visits amazon website
 		When User search by product name
 		Then Count the results
-	  And User clears first search from input
+	        And User clears first search from input
 		Then Add a product to the basket
-    Then Go to basket screen and check product exists
+                Then Go to basket screen and check product exists
